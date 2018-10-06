@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'cd thinkpro-bank && mvn -B -DskipTests clean package'
+        sh 'mvn -B -DskipTests clean package'
         sh 'echo $USER'
         sh 'echo whoami'
       }
